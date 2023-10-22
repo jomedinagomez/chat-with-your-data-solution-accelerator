@@ -31,7 +31,7 @@ param WebsiteName string = '${ResourcePrefix}-website'
 param ApplicationInsightsName string = '${ResourcePrefix}-appinsights'
 
 @description('Use semantic search')
-param AzureSearchUseSemanticSearch string = 'false'
+param AzureSearchUseSemanticSearch string = 'true'
 
 @description('Semantic search config')
 param AzureSearchSemanticSearchConfig string = 'default'
@@ -61,7 +61,7 @@ param AzureSearchUrlColumn string = 'url'
 param AzureOpenAIResource string
 
 @description('Azure OpenAI Model Deployment Name')
-param AzureOpenAIModel string = 'gpt-35-turbo'
+param AzureOpenAIModel string = 'chat'
 
 @description('Azure OpenAI Model Name')
 param AzureOpenAIModelName string = 'gpt-35-turbo'
